@@ -36,7 +36,7 @@ require('domready')(function() {
 
 ### ```var quad = createTexQuad(gl [, options])```
 
-Creates a new textured quad with the given options:
+Creates a new textured quad with optional settings:
 
 - `shader`: specify a shader to use when rendering. If not specified, a default shader will be constructed that multiplies the texture color by a uniform color.
 
@@ -66,7 +66,7 @@ If you specified a shader in the constructor or change this property, you are re
 
 The default shader, or undefined. This is undefined if you specified your own shader in the constructor. 
 
-### inherits from gl-quad
+### ```gl-quad```
 
 This class also receives the members from [gl-quad](https://www.npmjs.org/package/gl-quad).
 
