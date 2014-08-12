@@ -1,0 +1,63 @@
+{
+  "name": "gl-textured-quad",
+  "version": "1.0.0",
+  "description": "quick way to draw a texture to the screen",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Matt DesLauriers <dave.des@gmail.com>",
+  "dependencies": {
+    "gl-quad": "^1.0.0",
+    "glslify": "^1.6.0"
+  },
+  "devDependencies": {
+    "baboon-image": "^1.0.0",
+    "domready": "^1.0.6",
+    "gl-texture2d": "^1.2.0",
+    "tape": "~2.13.2",
+    "webgl-context": "^1.2.1"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/gl-textured-quad.git"
+  },
+  "homepage": "https://github.com/mattdesl/gl-textured-quad",
+  "bugs": {
+    "url": "https://github.com/mattdesl/gl-textured-quad/issues"
+  },
+  "keywords": [
+    "quad",
+    "glsl",
+    "stackgl",
+    "gl-modules",
+    "gl",
+    "webgl",
+    "texture",
+    "sprite",
+    "full",
+    "screen",
+    "fullscreen",
+    "image",
+    "ndarray"
+  ],
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  }
+}
