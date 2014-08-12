@@ -40,7 +40,7 @@ Creates a new textured quad with the given options:
 
 - `shader`: specify a shader to use when rendering. If not specified, a default shader will be constructed that multiplies the texture color by a uniform color.
 
-### ```quad.draw(texture, colors)```
+### ```quad.draw(texture [, colors])```
 
 Draws the quad with the given texture and optional color multiplier. 
 If no color is specified, it defaults to white (i.e. no tint). Otherwise it is assumed to be a 4-component float array that can be passed to the shader's `color` uniform.
