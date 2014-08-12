@@ -4,6 +4,8 @@
 
 Quickly draw a textured quad to the screen. Inherits from [gl-quad](https://www.npmjs.org/package/gl-quad).
 
+![baboon](http://i.imgur.com/hFr187m.png)
+
 ```js
 var baboon = require('baboon-image')
 
