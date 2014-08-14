@@ -1,6 +1,6 @@
 {
   "name": "gl-textured-quad",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "quick way to draw a texture to the screen",
   "main": "index.js",
   "license": "MIT",
