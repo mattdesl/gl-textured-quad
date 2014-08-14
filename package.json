@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Matt DesLauriers <dave.des@gmail.com>",
   "dependencies": {
-    "gl-quad": "^1.0.0",
+    "gl-quad": "^1.1.1",
     "glslify": "^1.6.0"
   },
   "devDependencies": {
