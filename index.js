@@ -27,9 +27,12 @@ QuadTex.prototype = Object.create(Quad.prototype)
 QuadTex.prototype.draw = function(tex, color) {
     this.shader.bind()
 
-    if (typeof this.shader.uniforms.color !== 'undefined')
+    //until gl-shader-core includes a hasUniform feature,
+    //this is faster than typeof since it doesn't trigger 
+    //a gl.getUniform call
+    if ('color' in this.shader.uniforms)
         this.shader.uniforms.color = color || DEFAULT_COLOR
-    if (typeof this.shader.uniforms.texture !== 'undefined')
+    if ('texture' in this.shader.uniforms)
         this.shader.uniforms.texture = 0
 
     if (tex)
